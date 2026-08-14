@@ -1,0 +1,477 @@
+[
+{
+  "model": "exam.user",
+  "pk": 1,
+  "fields": {
+    "full_name": "Pranjal Chauhan",
+    "username": "pranjal",
+    "email": "pranjal@gmail.com",
+    "password": "pranjal@24",
+    "role": "Admin"
+  }
+},
+{
+  "model": "exam.user",
+  "pk": 4,
+  "fields": {
+    "full_name": "akshay kumar",
+    "username": "akshay",
+    "email": "akshay@gmail.com",
+    "password": "akshay@12",
+    "role": "Learner"
+  }
+},
+{
+  "model": "exam.user",
+  "pk": 5,
+  "fields": {
+    "full_name": "rohit sharma",
+    "username": "rohit",
+    "email": "rohit123@gmail.com",
+    "password": "rohit@12",
+    "role": "Learner"
+  }
+},
+{
+  "model": "exam.user",
+  "pk": 6,
+  "fields": {
+    "full_name": "sumit chauhan",
+    "username": "sumit",
+    "email": "sumit@gmail.com",
+    "password": "sumit@12",
+    "role": "Learner"
+  }
+},
+{
+  "model": "exam.user",
+  "pk": 7,
+  "fields": {
+    "full_name": "abhay pratap",
+    "username": "abhay",
+    "email": "abhay@gmail.com",
+    "password": "abhay@12",
+    "role": "Learner"
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 1,
+  "fields": {
+    "question": "Who Developed Python Language",
+    "option1": "Dennis Ritchie",
+    "option2": "Guido Van Rossum",
+    "option3": "Bill gates",
+    "option4": "Mark Zuckerberg",
+    "correct_option": 2
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 2,
+  "fields": {
+    "question": "Which language is primarily used to style web pages?",
+    "option1": "HTML",
+    "option2": "Css",
+    "option3": "Python",
+    "option4": "Java",
+    "correct_option": 2
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 3,
+  "fields": {
+    "question": "Which keyword is used to define a function in Python?",
+    "option1": "func",
+    "option2": "define",
+    "option3": "def",
+    "option4": "function",
+    "correct_option": 3
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 5,
+  "fields": {
+    "question": "Which SQL command is used to retrieve data from a table?",
+    "option1": "FETCH",
+    "option2": "SELECT",
+    "option3": "READ",
+    "option4": "GET",
+    "correct_option": 2
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 6,
+  "fields": {
+    "question": "Which React hook is used to manage state?",
+    "option1": "useEffect()",
+    "option2": "useState()",
+    "option3": "useData()",
+    "option4": "useValue()",
+    "correct_option": 2
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 8,
+  "fields": {
+    "question": "What is the output of console.log(2 + 3 * 4) in JavaScript?",
+    "option1": "10",
+    "option2": "24",
+    "option3": "20",
+    "option4": "14",
+    "correct_option": 4
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 9,
+  "fields": {
+    "question": "In Django, which file commonly contains URL patterns for an application?",
+    "option1": "admin.py",
+    "option2": "urls.py",
+    "option3": "manage.py",
+    "option4": "models.py",
+    "correct_option": 2
+  }
+},
+{
+  "model": "exam.question",
+  "pk": 10,
+  "fields": {
+    "question": "What does the map() method generally return when called on a JavaScript array?",
+    "option1": "a boolean value",
+    "option2": "an original array",
+    "option3": "a new array",
+    "option4": "none",
+    "correct_option": 3
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 1,
+  "fields": {
+    "user": 5,
+    "score": 4,
+    "total_questions": 5
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 2,
+  "fields": {
+    "user": 5,
+    "score": 5,
+    "total_questions": 5
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 3,
+  "fields": {
+    "user": 5,
+    "score": 3,
+    "total_questions": 5
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 4,
+  "fields": {
+    "user": 5,
+    "score": 5,
+    "total_questions": 5
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 5,
+  "fields": {
+    "user": 6,
+    "score": 5,
+    "total_questions": 5
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 6,
+  "fields": {
+    "user": 6,
+    "score": 5,
+    "total_questions": 5
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 7,
+  "fields": {
+    "user": 6,
+    "score": 0,
+    "total_questions": 0
+  }
+},
+{
+  "model": "exam.exam",
+  "pk": 8,
+  "fields": {
+    "user": 6,
+    "score": 1,
+    "total_questions": 1
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 1,
+  "fields": {
+    "exam": 1,
+    "question": 1,
+    "selected_option": 1
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 2,
+  "fields": {
+    "exam": 1,
+    "question": 3,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 3,
+  "fields": {
+    "exam": 1,
+    "question": 6,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 4,
+  "fields": {
+    "exam": 1,
+    "question": 2,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 5,
+  "fields": {
+    "exam": 1,
+    "question": 5,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 6,
+  "fields": {
+    "exam": 2,
+    "question": 2,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 7,
+  "fields": {
+    "exam": 2,
+    "question": 1,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 8,
+  "fields": {
+    "exam": 2,
+    "question": 6,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 9,
+  "fields": {
+    "exam": 2,
+    "question": 3,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 10,
+  "fields": {
+    "exam": 2,
+    "question": 5,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 11,
+  "fields": {
+    "exam": 3,
+    "question": 5,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 12,
+  "fields": {
+    "exam": 3,
+    "question": 6,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 13,
+  "fields": {
+    "exam": 3,
+    "question": 2,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 14,
+  "fields": {
+    "exam": 3,
+    "question": 1,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 15,
+  "fields": {
+    "exam": 3,
+    "question": 3,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 16,
+  "fields": {
+    "exam": 4,
+    "question": 3,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 18,
+  "fields": {
+    "exam": 4,
+    "question": 5,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 19,
+  "fields": {
+    "exam": 4,
+    "question": 6,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 20,
+  "fields": {
+    "exam": 4,
+    "question": 2,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 21,
+  "fields": {
+    "exam": 5,
+    "question": 5,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 22,
+  "fields": {
+    "exam": 5,
+    "question": 1,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 23,
+  "fields": {
+    "exam": 5,
+    "question": 3,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 24,
+  "fields": {
+    "exam": 5,
+    "question": 9,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 26,
+  "fields": {
+    "exam": 6,
+    "question": 5,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 27,
+  "fields": {
+    "exam": 6,
+    "question": 1,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 28,
+  "fields": {
+    "exam": 6,
+    "question": 3,
+    "selected_option": 3
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 29,
+  "fields": {
+    "exam": 6,
+    "question": 9,
+    "selected_option": 2
+  }
+},
+{
+  "model": "exam.useranswer",
+  "pk": 31,
+  "fields": {
+    "exam": 8,
+    "question": 5,
+    "selected_option": 2
+  }
+}
+]
