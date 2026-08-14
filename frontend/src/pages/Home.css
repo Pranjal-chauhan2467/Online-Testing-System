@@ -1,0 +1,65 @@
+.home {
+    min-height: 90vh;
+    background: #f4f7fb;
+    padding: 40px;
+}
+
+.hero {
+    text-align: center;
+    background: white;
+    padding: 70px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+.home-buttons {
+    margin-top: 30px;
+}
+
+.home-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.home-buttons a:hover {
+    background: #1d4ed8;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+    font-size: 20px;
+}
+
+.feature p {
+    color: #666;
+}

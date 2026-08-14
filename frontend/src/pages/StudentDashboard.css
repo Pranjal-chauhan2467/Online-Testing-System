@@ -1,0 +1,39 @@
+.learner-page {
+    padding: 30px;
+    text-align: center;
+}
+
+.learner-page > p {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.learner-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.learner-card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.learner-card p {
+    color: gray;
+}
+
+.learner-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.learner-card a:hover {
+    background: #1d4ed8;
+}

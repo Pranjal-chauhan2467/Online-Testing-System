@@ -1,0 +1,25 @@
+.users-page {
+    text-align: center;
+    padding: 30px;
+}
+
+.users-page table {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
+.users-page th,
+.users-page td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.users-page th {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+    margin: 10px;
+}
