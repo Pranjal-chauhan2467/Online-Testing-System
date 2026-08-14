@@ -58,8 +58,20 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS=True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "https://online-testing-system-mu.vercel.app",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "https://online-testing-system-mu.vercel.app",
+]
 CORS_ALLOW_CREDENTIALS = True
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = "None"
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
