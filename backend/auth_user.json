@@ -1,0 +1,20 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$YjfrxRADbO9yBHfHf6Tt8Q$CqaQfZm+L18hcqZLAnOvWLoZJmzTGYud+16D8WxEQPI=",
+    "last_login": "2026-08-07T16:59:54.727Z",
+    "is_superuser": true,
+    "username": "pranjalchauhan",
+    "first_name": "",
+    "last_name": "",
+    "email": "pranjalchauhan@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-07T16:58:46.919Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
