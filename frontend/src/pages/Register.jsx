@@ -3,6 +3,7 @@ import axios from 'axios';
 import {useNavigate} from "react-router-dom"
 import {Link} from "react-router-dom";
 import "./Register.css";
+const API_URL = import.meta.env.VITE_API_URL;
 function Register() {
     const [formdata,setFormData]=useState({
         full_name:"",
@@ -24,7 +25,7 @@ function Register() {
     async function registerUser(event){
         event.preventDefault();
         try{
-            const response=await axios.post("http://localhost:8000/online/register/",formdata);
+            const response=await axios.post(`${API_URL}/online/register/`,formdata);
             
            alert(response.data.message);
           navigate("/login")

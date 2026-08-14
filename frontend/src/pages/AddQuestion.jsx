@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {useState} from 'react';
 import "./AddQuestion.css";
+const API_URL = import.meta.env.VITE_API_URL;
 function AddQuestion(){
     const [formdata,setFormData]=useState({
        question:"",
@@ -24,7 +25,7 @@ function AddQuestion(){
         try {
 
             const response = await axios.post(
-                "http://localhost:8000/online/add-question/",formdata
+                `${API_URL}/online/add-question/`,formdata
             );
 
             setMessage(response.data.message);

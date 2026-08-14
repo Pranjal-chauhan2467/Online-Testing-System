@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./ViewUser.css";
+const API_URL = import.meta.env.VITE_API_URL;
 function ViewUser() {
 
     const [users, setUsers] = useState([]);
@@ -15,7 +16,7 @@ function ViewUser() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8000/online/view-users/"
+              `${API_URL}/online/view-users/`
             );
 
             setUsers(response.data.users);

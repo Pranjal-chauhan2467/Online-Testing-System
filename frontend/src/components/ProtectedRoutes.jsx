@@ -1,6 +1,7 @@
 import {useState,useEffect} from "react";
 import axios from "axios";
 import {Navigate} from "react-router-dom";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function ProtectedRoutes({role,children}){
       const [user, setUser] = useState(null);
@@ -9,7 +10,7 @@ function ProtectedRoutes({role,children}){
      useEffect(()=>{
         const checksession=async()=>{
           try{
-            const response=await axios.get("http://localhost:8000/online/checksession/");
+            const response=await axios.get(`${API_URL}/online/checksession/`);
             
             if(response.data.logged_in){
                 setUser(response.data);

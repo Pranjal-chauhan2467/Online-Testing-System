@@ -1,7 +1,7 @@
 import {useState,useEffect} from "react";
 import axios from "axios";
 import "./Result.css";
-
+const API_URL = import.meta.env.VITE_API_URL;
 function Result(){
     const [results,setResults]=useState([])
 
@@ -10,7 +10,7 @@ function Result(){
     },[]);
     const getResults=async()=>{
         try{
-         const response= await axios.get("http://localhost:8000/online/my-results/");
+         const response= await axios.get(`${API_URL}/online/my-results/`);
           setResults(response.data.results);
     }
     catch(error){

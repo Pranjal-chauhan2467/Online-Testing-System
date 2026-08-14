@@ -3,7 +3,7 @@ import "./ViewQuestion.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./ViewQuestion.css";
-
+const API_URL = import.meta.env.VITE_API_URL;
 function ViewQuestion() {
 
     const [question, setQuestion] = useState([]);
@@ -18,7 +18,7 @@ function ViewQuestion() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8000/online/view-question/",
+                `${API_URL}/online/view-question/`,
                 {
                     withCredentials: true
                 }
@@ -52,7 +52,7 @@ function ViewQuestion() {
         try {
 
             await axios.post(
-                `http://localhost:8000/online/update-question/${editquestion.id}/`,
+                `${API_URL}/online/update-question/${editquestion.id}/`,
                 editquestion,
                 {
                     withCredentials: true
@@ -77,7 +77,7 @@ function ViewQuestion() {
         try {
 
             await axios.delete(
-                `http://localhost:8000/online/delete-question/${id}/`,
+                `${API_URL}/online/delete-question/${id}/`,
                 {
                     withCredentials: true
                 }

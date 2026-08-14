@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react';
 import axios from 'axios';
 import "./Exam.css";
+const API_URL = import.meta.env.VITE_API_URL;
 function Exam(){
     const [questions,setQuestions]=useState([])
     // Stores answers selected by the user
@@ -13,7 +14,7 @@ function Exam(){
 
     const startExam=async ()=>{
         try{
-           const response= await axios.get("http://localhost:8000/online/start-exam/")
+           const response= await axios.get(`${API_URL}/online/start-exam/`)
             setQuestions(response.data.questions)
         }
         catch(error){
@@ -40,7 +41,7 @@ function Exam(){
        }
     }
          try{ 
-           const response = await axios.post( "http://localhost:8000/online/submit-exam/", { answers: answers }
+           const response = await axios.post( `${API_URL}/online/submit-exam/`, { answers: answers }
            );
           // Display score 
           setMarks( "Your Score: " + response.data.score + "/" + response.data.total_questions ); 

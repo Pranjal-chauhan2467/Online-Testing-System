@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import { Link,useNavigate,useLocation } from "react-router-dom";
 import "./Navbar.css";
 import axios from'axios';
+const API_URL = import.meta.env.VITE_API_URL;
 function Navbar(){
   const [user,setUser]=useState(null)
   const navigate=useNavigate()
@@ -11,7 +12,7 @@ function Navbar(){
   },[location.pathname]);
   const getUser=async()=>{
     try{
-     const response=await axios.get("http://localhost:8000/online/checksession/");
+     const response=await axios.get(`${API_URL}/online/checksession/`);
 
     if(response.data.logged_in){
         setUser({role:response.data.role})
@@ -26,7 +27,7 @@ function Navbar(){
     };
     const logout=async()=>{
       try{
-       const response=axios.post("http://localhost:8000/online/logout/")
+       const response= await axios.post(`${API_URL}/online/logout/`)
        setUser(null)
        navigate("/login");
     }

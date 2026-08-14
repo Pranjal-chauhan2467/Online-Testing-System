@@ -2,6 +2,7 @@ import {useState,useEffect} from "react";
 import axios from "axios";
 import { useNavigate,Link } from "react-router-dom";
 import "./Login.css";
+const API_URL = import.meta.env.VITE_API_URL;
 function Login(){
      const [formdata,setFormData]=useState({
         username:"",
@@ -20,10 +21,10 @@ function Login(){
      const handleSubmit=async(event)=>{
              event.preventDefault()
             try{
-             await axios.post("http://localhost:8000/online/login/",formdata
+             await axios.post(`${API_URL}/online/login/`,formdata
              );
              const response = await axios.get(
-                "http://localhost:8000/online/checksession/"
+                `${API_URL}/online/checksession/`
                 );
                  if (response.data.logged_in) {
                    if (response.data.role === "Admin") {
