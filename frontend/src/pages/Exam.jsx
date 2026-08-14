@@ -33,13 +33,15 @@ function Exam(){
       };
       // Submit exam 
       const submitExam=async()=> { 
-         for (let question of questions) {
-
-       if (!answers[question.id]) {
+       for (let question of questions) {
+    const answered = answers.some(
+        (answer) => answer.question_id === question.id
+    );
+    if (!answered) {
         setError("Please answer all questions");
         return;
-       }
     }
+}
          try{ 
            const response = await axios.post( `${API_URL}/online/submit-exam/`, { answers: answers }
            );
